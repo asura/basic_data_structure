@@ -5,7 +5,7 @@
 |整数|int, long, long long||||
 |浮動小数点数|float, double||||
 |文字列|string||||
-|配列・リスト|[vector](c++/vector.cpp), array, list||||
+|配列・リスト|[vector](c++/vector.cpp), array, list|[list](python/test_list.py)|||
 |連想配列|map, unordered_map||||
 |集合|set, unordered_set||||
 
@@ -20,4 +20,12 @@ $ cd build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release
 $ make
 $ ./sample
+```
+
+### Python
+
+```
+$ cd python
+$ pip3 install -r requirements.txt 
+$ python -v
 ```
