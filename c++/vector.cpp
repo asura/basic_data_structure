@@ -30,6 +30,24 @@ SCENARIO(
                     CHECK(sut[2] == 3);
                 }
             }
+
+            AND_WHEN("要素を合計する")
+            {
+                // std::accumulateを使うところだが
+                // ループのサンプルなので
+
+                int sum = 0;
+
+                for (const auto i : sut)
+                {
+                    sum += i;
+                }
+
+                THEN("結果は6")
+                {
+                    CHECK(sum == 6);
+                }
+            }
         }
     }
 }
