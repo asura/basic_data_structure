@@ -11,6 +11,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     lv \
     npm \
     python3-pip \
-    ruby
+    ruby-dev
+
+RUN gem install bundler rubocop solargraph
 
 RUN npm install -g typescript
