@@ -8,3 +8,16 @@
 |配列・リスト|[vector](c++/vector.cpp), array, list||||
 |連想配列|map, unordered_map||||
 |集合|set, unordered_set||||
+
+## サンプルの動かしかた
+
+### C++
+
+```
+$ cd c++
+$ mkdir build
+$ cd build
+$ cmake .. -DCMAKE_BUILD_TYPE=Release
+$ make
+$ ./sample
+```
