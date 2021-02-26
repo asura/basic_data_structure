@@ -5,7 +5,7 @@
 |整数|int, long, long long||||
 |浮動小数点数|float, double||||
 |文字列|string||||
-|配列・リスト|[vector](c++/vector.cpp), array, list|[list](python/test_list.py)|[Array](ruby/spec/array_spec.rb)||
+|配列・リスト|[vector](c++/vector.cpp), array, list|[list](python/test_list.py)|[Array](ruby/spec/array_spec.rb)|[Array](typescript/src/array.test.ts)|
 |連想配列|map, unordered_map||||
 |集合|set, unordered_set||||
 
@@ -27,7 +27,7 @@ $ ./sample
 ```
 $ cd python
 $ pip3 install -r requirements.txt 
-$ python -v
+$ pytest -v
 ```
 
 ### Ruby
@@ -36,4 +36,11 @@ $ python -v
 $ cd ruby
 $ bundle install
 $ bundle exec rspec
+```
+
+### TypeScript
+
+```
+$ cd typescript
+$ jest
 ```

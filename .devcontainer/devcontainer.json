@@ -29,5 +29,8 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/workspaces/basic_data_structure/typescript/node_modules/.bin"
+	}
 }
