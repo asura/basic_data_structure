@@ -7,6 +7,26 @@ SCENARIO(
     std::map<int, int> sut;
     REQUIRE(sut.empty());
 
+    WHEN("存在しないキーの取得を試みる(find)")
+    {
+        const auto p = sut.find(0);
+
+        THEN("存在しないことがわかる")
+        {
+            CHECK(p == sut.end());
+        }
+    }
+
+    WHEN("存在しないキーの取得を試みる(op[])")
+    {
+        const auto v = sut[0];
+
+        THEN("要素が生成されてしまう")
+        {
+            CHECK(v == 0);
+        }
+    }
+
     WHEN("新規の値を追加する")
     {
         const auto result = sut.insert({1, 2});
