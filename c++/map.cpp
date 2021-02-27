@@ -90,7 +90,7 @@ SCENARIO(
                     }
                 }
 
-                AND_WHEN("要素の値を変更する")
+                AND_WHEN("要素の値を変更する(イテレータ経由)")
                 {
                     auto p = sut.find(2);
                     REQUIRE(p != sut.end());
@@ -101,6 +101,18 @@ SCENARIO(
                     {
                         CHECK(sut[1] == 2);
                         CHECK(sut[2] == 4);
+                        CHECK(sut[3] == 4);
+                    }
+                }
+
+                AND_WHEN("要素の値を変更する(op[])")
+                {
+                    sut[2] += 2;
+
+                    THEN("変更した要素のみ値が変わっている")
+                    {
+                        CHECK(sut[1] == 2);
+                        CHECK(sut[2] == 5);
                         CHECK(sut[3] == 4);
                     }
                 }
