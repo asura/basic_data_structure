@@ -20,6 +20,7 @@ FetchContent_MakeAvailable(Catch2)
 add_executable(
     sample
     main.cpp
+    set.cpp
     vector.cpp
 )
 
