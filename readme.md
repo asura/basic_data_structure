@@ -14,7 +14,7 @@
 |文字列|string||||
 |配列・リスト|[vector](c++/vector.cpp), array, list|[list](python/test_list.py)|[Array](ruby/spec/array_spec.rb)|[Array](typescript/src/array.spec.ts)|
 |連想配列|map, unordered_map||||
-|集合|[set](c++/set.cpp), unordered_set|[set](python/test_set.py)|[Set](ruby/spec/set_spec.rb)||
+|集合|[set](c++/set.cpp), unordered_set|[set](python/test_set.py)|[Set](ruby/spec/set_spec.rb)|[Set](typescript/src/set.spec.ts)|
 ||||||
 |<テストツール>|[Catch2](https://github.com/catchorg/Catch2)|[pytest](https://docs.pytest.org/en/stable/)|[rspec-given](https://github.com/jimweirich/rspec-given)|[jest](https://jestjs.io/docs/ja/getting-started)|
 
@@ -51,5 +51,5 @@ $ bundle exec rspec
 
 ```
 $ cd typescript
-$ jest
+$ jest --verbose
 ```
