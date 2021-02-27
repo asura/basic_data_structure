@@ -79,7 +79,7 @@ SCENARIO(
                 {
                     int sum = 0;
 
-                    for (const auto pair : sut)
+                    for (const auto &pair : sut)
                     {
                         sum += pair.second;
                     }
