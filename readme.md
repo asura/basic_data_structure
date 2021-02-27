@@ -13,7 +13,7 @@
 |浮動小数点数|float, double||||
 |文字列|string||||
 |配列・リスト|[vector](c++/vector.cpp), array, list|[list](python/test_list.py)|[Array](ruby/spec/array_spec.rb)|[Array](typescript/src/array.spec.ts)|
-|連想配列|[map](c++/map.cpp), unordered_map|[dict](python/test_dict.py)|[Hash](ruby/spec/hash_spec.rb)||
+|連想配列|[map](c++/map.cpp), unordered_map|[dict](python/test_dict.py)|[Hash](ruby/spec/hash_spec.rb)|Array, [Dictionary](typescript/src/dictionary.spec.ts), Map, Object|
 |集合|[set](c++/set.cpp), unordered_set|[set](python/test_set.py)|[Set](ruby/spec/set_spec.rb)|[Set](typescript/src/set.spec.ts)|
 ||||||
 |<テストツール>|[Catch2](https://github.com/catchorg/Catch2)|[pytest](https://docs.pytest.org/en/stable/)|[rspec-given](https://github.com/jimweirich/rspec-given)|[jest](https://jestjs.io/docs/ja/getting-started)|
